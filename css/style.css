@@ -1,0 +1,142 @@
+/* Main Component */
+body{
+	font: 15px/1.5 "Roboto Condensed", sans-serif;
+	padding:0;
+	margin:0;
+	background-color:#f4f4f4;
+}
+
+.container{
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+
+ul{
+	margin: 0;
+	padding:0;
+}
+
+/* Header */
+header{
+	background: #ef3849;
+	color: #ffffff;
+	padding-top: 30px;
+	min-height:70px;
+	border-bottom: #063744 3px solid;
+}
+
+header a{
+	color:#ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size:16px;
+}
+
+header li{
+	float:left;
+	display:inline;
+	padding:0 20px 0 20px;
+}
+
+header #branding h1{
+	margin:0;
+}
+
+header nav{
+	float:right;
+	margin-top:10px;
+}
+
+header .highlight,header .current a{
+	color:#000000;
+	font-weight:bold;
+}
+
+header a:hover{
+	color:#cccccc;
+	font-weight: bold;
+}
+
+
+/* Showcase */
+#showcase{
+	min-height:400px;
+	background:url('../img/curiosity.jpg') no-repeat center;
+	background-size:cover;
+	text-align:center;
+	color:#ffffff;
+}
+
+#showcase h1{
+	margin-top:90px;
+	font-size:66px;
+	margin-bottom:10px;
+	text-transform: uppercase;
+}
+
+#showcase p{
+	font-size:20px;
+}
+
+
+
+/* Newsletter */
+#newsletter{
+	padding:15px;
+	color:#ffffff;
+	background:#063744;
+}
+
+#newsletter h1{
+	float:left;
+}
+
+#newsletter form{
+	float:right;
+	margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+	padding:4px;
+	height:25px;
+	width:250px;
+}
+
+.button_1{
+	height:37px;
+	background:#ef3849;
+	border:0;
+	padding-left:20px;
+	padding-right:20px;
+	color:  #ffffff;
+}
+
+.button_1 :hover{
+	background:#cccccc;
+	font-weight: bold;
+}
+
+
+/* Footer */
+footer{
+	padding:20px;
+	margin-top:20px;
+	color:#ffffff;
+	background-color:#063744;
+	text-align:center;
+}
+
+/* Making the website responsive by using media queries */
+@media(max-width: 768px){
+	header #branding,
+	header nav,
+	header nav li,
+	#newsletter h1,
+	#newsletter form,
+	#box .box{
+		float:none;
+		text-align:center;
+		width:100%;
+	}
+}
